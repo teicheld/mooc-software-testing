@@ -11,17 +11,17 @@ public class GettingStartedTest {
         Assertions.assertEquals(25,result);
     }
 
-//    UNCOMMENT THE CODE BELOW, AND FILL THE GAPS!
+    UNCOMMENT THE CODE BELOW, AND FILL THE GAPS!
 
-//    @Test
-//    public void addFiveToZero() {
-//        int result = new GettingStarted().addFive(???);
-//        Assertions.assertEquals(???, result);
-//    }
-//
-//    @Test
-//    public void addFiveToMinus20() {
-//        int result = new GettingStarted().addFive(???);
-//        Assertions.assertEquals(????,result);
-//    }
+    @Test
+    public void addFiveToZero() {
+        int result = new GettingStarted().addFive(???);
+        Assertions.assertEquals(???, result);
+    }
+
+    @Test
+    public void addFiveToMinus20() {
+        int result = new GettingStarted().addFive(???);
+        Assertions.assertEquals(????,result);
+    }
 }

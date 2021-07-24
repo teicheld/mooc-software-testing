@@ -12,9 +12,26 @@ public class CountLettersTest {
     }
 
     @Test
+    public void lastCharIsR() {
+        int words = new CountLetters().count("cats|dogs|reaver");
+        Assertions.assertEquals(3, words);
+    }
+
+    @Test
+    public void notLastWordEndsWithR() {
+        int words = new CountLetters().count("cats|reaver|dogs");
+        Assertions.assertEquals(3, words);
+    }
+
+    @Test
     public void lastWordDoesNotMatch() {
         int words = new CountLetters().count("cats|dog");
         Assertions.assertEquals(1, words);
     }
 
+    @Test
+    public void firstWordDoesNotMatch() {
+        int words = new CountLetters().count("cat|dogs");
+        Assertions.assertEquals(1, words);
+    }
 }
